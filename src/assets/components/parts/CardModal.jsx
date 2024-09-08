@@ -75,13 +75,10 @@ const EditButton = styled(Button)`
 
 export const CardModal = ({modalClose, getUserId}) => {
 
-    useGetUserHook();
-
     const getUsers = useRecoilValue(getUserState);
 
     const user = getUsers.find((user) => user.id === getUserId)
   
-
     const isAdmin = useRecoilValue(loginState);
     const [isEdit, setIsEdit] = useState(true)
     const [editText, setEditText] = useState({
