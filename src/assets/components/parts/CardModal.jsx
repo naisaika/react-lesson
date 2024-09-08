@@ -1,7 +1,6 @@
 import { useRecoilValue } from 'recoil';
 import { loginState } from "../../grobalState/LoginState";
 import { useState } from 'react';
-import { useGetUserHook } from "../CustomHook/GetUserHook";
 import { getUserState } from "../../grobalState/GetUserState";
 import styled from 'styled-components';
 import { Button } from './Button';
